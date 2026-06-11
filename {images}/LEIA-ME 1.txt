@@ -1,0 +1,5 @@
+Coloque suas fotos aqui com os nomes:
+foto1.jpg, foto2.jpg, foto3.jpg, foto4.jpg, foto5.jpg, foto6.jpg
+
+Para trocar nomes/legendas ou adicionar mais fotos,
+edite CONFIG.photos no arquivo script.js

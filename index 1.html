@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para você · 5 anos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- texturas de fundo -->
+    <div class="grain" aria-hidden="true"></div>
+    <canvas id="fireworks" aria-hidden="true"></canvas>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+
+    <!-- ===================== INTRO ===================== -->
+    <div id="intro">
+      <div class="intro-inner">
+        <p class="intro-meta" id="introMeta"></p>
+        <h1 class="intro-title">
+          <span class="word">Nossa</span>
+          <span class="word it">história</span>
+        </h1>
+        <button id="openBtn" class="open-btn"><span>começar</span></button>
+      </div>
+    </div>
+
+    <!-- ===================== FILME ===================== -->
+    <main id="film">
+      <!-- SEÇÃO 1 — Boas-vindas -->
+      <section class="scene tone-light" data-scene>
+        <div class="wrap center">
+          <p class="eyebrow rv">com todo o carinho</p>
+          <h2 class="scene-title rv d1">Bem-vinda</h2>
+          <p class="lede rv d2" id="welcomeText"></p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 2 — Contador + frase + foto -->
+      <section class="scene tone-lilac" data-scene>
+        <div class="wrap center">
+          <p class="eyebrow rv">o tempo que carregamos juntos</p>
+          <div class="counter rv d1" id="counter"></div>
+          <p class="counter-phrase rv d2" id="counterPhrase"></p>
+          <div class="photo-single rv d3" data-photo="hero">
+            <span class="photo-ph">nossa foto</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 3 — Carta -->
+      <section class="scene tone-light" data-scene>
+        <div class="wrap letter">
+          <p class="greeting rv">Meu amor,</p>
+          <div class="letter-body" id="letter"></div>
+          <p class="signature rv">
+            Com todo o meu amor,<br /><span class="name" id="name"></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 4 — Galeria de 6 fotos -->
+      <section class="scene tone-lilac" data-scene>
+        <div class="wrap center">
+          <p class="eyebrow rv">nossos momentos</p>
+          <h2 class="scene-title rv d1">Pedacinhos de nós</h2>
+          <div class="gallery rv d2" id="gallery"></div>
+          <p class="caption-soft rv d3" id="galleryCaption"></p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 5 — Declaração + surpresa -->
+      <section class="scene tone-light" data-scene>
+        <div class="wrap center">
+          <p class="eyebrow rv">o que eu preciso te dizer</p>
+          <h2 class="declare rv d1" id="declareText"></h2>
+          <p class="lede rv d2" id="surpriseText"></p>
+          <button class="cta rv d3" id="surpriseBtn">
+            <span>descobrir a surpresa</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 6 — Quiz do restaurante -->
+      <section class="scene tone-lilac" data-scene>
+        <div class="wrap center">
+          <p class="eyebrow rv">a surpresa</p>
+          <h2 class="scene-title rv d1">Adivinha onde vamos jantar</h2>
+          <p class="quiz-sub rv d2">
+            Escolha o tipo de comida que você acha que reservei pra noix
+          </p>
+          <div class="quiz rv d3" id="quiz"></div>
+          <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+          <div class="quiz-win" id="quizWin">
+            <h3 class="win-title">Filiiiz! 🎉</h3>
+            <p class="win-text" id="winText"></p>
+            <a
+              class="cta cta-alt"
+              id="restaurantLink"
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span id="restaurantName">Ver o restaurante</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- seta de avançar -->
+    <button class="nav-arrow" id="navArrow" aria-label="Próxima seção">
+      <svg
+        class="chev"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+      >
+        <path d="M9 6l6 6-6 6" />
+      </svg>
+    </button>
+
+    <!-- progresso -->
+    <div class="progress" id="progress" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
